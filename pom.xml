@@ -12,6 +12,7 @@
     <groupId>com.bell.twitterbot</groupId>
     <artifactId>bell-twitter-bot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>bell-twitter-bot</name>
     <description>Twitter bot for bell test</description>
     <properties>
@@ -92,6 +93,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>bell-twitter-bot</finalName>
     </build>
 
 </project>

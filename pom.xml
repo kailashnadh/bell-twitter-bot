@@ -93,6 +93,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>bell-twitter-bot</finalName>
     </build>
 
 </project>

@@ -29,7 +29,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: kailashnadh9/bell-twitter-bot
-        tags:  ${{ env.GIT_TAG }}
+        tags:  ${{github.run_number}}
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}

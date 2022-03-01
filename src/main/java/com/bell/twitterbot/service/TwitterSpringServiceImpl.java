@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.social.ApiException;
 import org.springframework.social.twitter.api.Tweet;
 import org.springframework.social.twitter.api.TweetData;
 import org.springframework.social.twitter.api.Twitter;
@@ -55,6 +56,7 @@ public class TwitterSpringServiceImpl implements TwitterService{
 			logger.error(String.format("tweet failed in Exception with message "
 					+ " {0}", e.getMessage()));
 			System.out.println("Twitter Error in Exception"+e.getMessage());
+			throw new ApiException(topic,e.getMessage());
 		}
 	}
 	
